@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: java/backend
+      - uses: actions/setup-java@v2
+        with:
+          java-version: 18
+      - run: mvn clean install
+      - uses: actions/heroku/deploy@v3
+        with:
+          heroku-app-name: ciudad-z-eia
+          heroku-api-key: ${{ secrets.HEROKU_API_KEY }}
