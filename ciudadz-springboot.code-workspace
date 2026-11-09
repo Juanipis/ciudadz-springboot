@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "java/backend",
+			"path": "./java/backend"
+		},
+		{
+			"name": "java/database",
+			"path": "./java/database"
+		}
+		
+	],
+	
+	"settings": {
+		"debug.openDebug": "openOnDebugBreak",
+		"debug.internalConsoleOptions": "openOnSessionStart",
+		//Java
+		"[java]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
+			"editor.defaultFormatter": "redhat.java"
+		  },
+		
+	}
+	"java.configuration.updateBuildConfiguration": "automatic",
+    	"java.compile.nullAnalysis.mode": "automatic",
+	},
+	
+	"extensions": {
+		"recommendations": [
+			"sonarsource.sonarlint-vscode",
+			"vscode-icons-team.vscode-icons",
+			"naumovs.color-highlight",
+			"mikestead.dotenv",
+			"hbenl.vscode-test-explorer",
+			"eamodio.gitlens",
+			"esbenp.prettier-vscode",
+			"vscjava.vscode-java-pack",
+			"vscjava.vscode-spring-initializr",
+			"nash.awesome-flutter-snippets",
+			"vscjava.vscode-gradle"
+		],}
+}
